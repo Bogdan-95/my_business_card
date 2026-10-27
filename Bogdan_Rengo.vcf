@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Реньго;Богдан;;;
+FN;CHARSET=UTF-8:Богдан Реньго
+TITLE;CHARSET=UTF-8:Junior Python Backend Developer
+EMAIL;TYPE=INTERNET:b95rengo@gmail.com
+URL:https://github.com/Bogdan-95
+URL:https://t.me/bodya_95
+NOTE;CHARSET=UTF-8:Python, FastAPI, PostgreSQL, Docker, pytest. Открыт к стажировке и Junior-позициям.
+END:VCARD

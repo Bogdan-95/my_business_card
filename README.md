@@ -1,24 +1,23 @@
-# Bogdan Rengo — Personal Business Card
+# Богдан Реньго — личная визитка
 
-A responsive, accessible, single-page personal business card and Python backend portfolio.
+Публичная визитка и компактное портфолио Python Backend Developer. Статический сайт: HTML, CSS и vanilla JavaScript, без сборщика и сторонних JS-библиотек.
 
-## Contents
+## Файлы
 
-- `index.html` — complete website, CSS, animations and interactions
-- `assets/bogdan-portrait.webp` — optimized portrait photo
-- `resume.pdf` — one-page resume for recruiters
-- `Bogdan_Rengo.vcf` — downloadable contact card
-- `favicon.svg` — site icon
-- `.github/workflows/pages.yml` — deploys the site to GitHub Pages on pushes to `main`
+- `index.html` — главная визитка и карточки проектов
+- `assets/bogdan-portrait.webp` — оптимизированное фото
+- `resume.html` — резюме в браузере с возможностью печати / сохранения в PDF
+- `Bogdan_Rengo.vcf` — контактная карточка для адресной книги
+- `favicon.svg` — иконка сайта
 
-## Publish with GitHub Pages
+## Публикация
 
-Repository: https://github.com/Bogdan-95/my_business_card
+Репозиторий: https://github.com/Bogdan-95/my_business_card
 
-The workflow uses GitHub Actions. In **Settings → Pages**, select **GitHub Actions** as the build/deployment source if it is not selected already. A successful deployment publishes the site at:
+В **Settings → Pages** выбери **Deploy from a branch**, затем ветку **main** и папку **/(root)**, после чего нажми **Save**. GitHub Pages опубликует `index.html` вместе с изображением, визиткой контактов и страницей резюме.
 
-https://bogdan-95.github.io/my_business_card/
+Ожидаемый адрес сайта: https://bogdan-95.github.io/my_business_card/
 
-## Local preview
+## Локальный просмотр
 
-Open `index.html` in any modern browser. The site's main layout and interactions work without any third-party JavaScript libraries or a build step.
+Открой `index.html` в современном браузере. Кнопка «Сохранить контакт» скачивает vCard. Страница резюме открывается по ссылке «Открыть резюме» и позволяет распечатать резюме либо сохранить его как PDF.

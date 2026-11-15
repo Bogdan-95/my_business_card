@@ -1,13 +1,366 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101b2c"><meta name="description" content="Резюме Богдана Реньго — Junior Python Backend Developer"><title>Резюме — Богдан Реньго | Python Backend</title><style>
-:root{--ink:#17263a;--muted:#63758a;--line:#dbe4eb;--mint:#148b7b;--paper:#fff}*{box-sizing:border-box}body{margin:0;background:#eff3f7;color:var(--ink);font:14px/1.55 Inter,Arial,sans-serif}.toolbar{max-width:900px;margin:22px auto 12px;padding:0 24px;display:flex;justify-content:space-between;gap:12px;align-items:center}.toolbar a,.toolbar button{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 13px;color:var(--ink);font-size:12px;font-weight:800;text-decoration:none;cursor:pointer}.toolbar button{background:#132338;color:#fff;border-color:#132338}.page{max-width:900px;margin:0 auto 28px;padding:48px 54px;background:#fff;border:1px solid #e2e8ef;border-radius:18px;box-shadow:0 14px 40px #16273a0c}.header{border-bottom:2px solid var(--ink);padding-bottom:20px}.name{font-size:34px;line-height:1.1;letter-spacing:-.05em;margin:0}.role{font-size:17px;font-weight:800;margin:7px 0}.contacts{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--muted);font-size:11px}.contacts a{color:var(--mint);text-decoration:none}.section{margin-top:24px}.section h2{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin:0 0 10px}.section p{margin:0;color:#3c4d61}.skills{display:grid;grid-template-columns:100px 1fr;gap:6px 12px;font-size:12px}.skills b{color:#243b50}.jobtop{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.jobtop strong{font-size:14px}.date{font-size:11px;color:var(--muted)}.project{margin-top:14px}.project h3{font-size:13px;margin:0 0 4px}.project p{font-size:12px}.project a{color:var(--mint);font-size:11px;word-break:break-word}.project ul{margin:5px 0 0;padding-left:18px;color:#3c4d61;font-size:12px}.project li{margin:3px 0}.education{display:flex;justify-content:space-between;gap:12px}.small{font-size:12px;color:var(--muted)}.footer{margin-top:26px;padding-top:12px;border-top:1px solid var(--line);color:#8896a7;font-size:10px}@media(max-width:650px){.toolbar{margin-top:12px;padding:0 12px}.page{margin:0 10px 18px;padding:26px 20px;border-radius:14px}.name{font-size:29px}.skills{grid-template-columns:1fr;gap:2px}.skills span{margin-bottom:7px}.section{margin-top:20px}}@page{size:A4;margin:12mm}@media print{body{background:#fff;font-size:10pt}.toolbar{display:none}.page{max-width:none;margin:0;padding:0;border:0;border-radius:0;box-shadow:none}.header{padding-bottom:12px}.section{margin-top:15px}.project{break-inside:avoid}.name{font-size:27pt}.role{font-size:12pt}.footer{margin-top:15px}}
-</style></head><body><div class="toolbar"><a href="index.html">← Визитка</a><button onclick="window.print()">Печать / Сохранить PDF ↗</button></div><main class="page"><header class="header"><h1 class="name">Богдан Реньго</h1><p class="role">Junior Python Backend Developer</p><div class="contacts"><span>Россия · удалённая работа</span><a href="mailto:b95rengo@gmail.com">b95rengo@gmail.com</a><a href="https://t.me/bodya_95">Telegram: @bodya_95</a><a href="https://github.com/Bogdan-95">GitHub: Bogdan-95</a></div></header>
-<section class="section"><h2>Профиль</h2><p>Самостоятельно разрабатываю Python backend-проекты полного цикла: REST API, очереди задач, интеграции с внешними сервисами, автоматические тесты и развёртывание. Коммерческого опыта разработки пока нет; рассматриваю стажировки и Junior Python Backend позиции.</p></section>
-<section class="section"><h2>Технические навыки</h2><div class="skills"><b>Python</b><span>Python 3.11–3.12, ООП, type hints, asyncio</span><b>Backend / API</b><span>FastAPI, REST API, Pydantic, aiogram 3, httpx, aiohttp</span><b>Базы данных</b><span>PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic, SQL</span><b>Качество</b><span>pytest, unittest.mock, интеграционные тесты, Ruff, Black</span><b>Инфраструктура</b><span>Docker, Docker Compose, Linux, Bash, Git, GitHub Actions, CI/CD</span></div></section>
-<section class="section"><h2>Проектная разработка</h2><div class="jobtop"><strong>Python Backend Developer — самостоятельные проекты</strong><span class="date">Май 2025 — настоящее время</span></div>
-<div class="project"><h3>Content Factory — API и очередь задач для генерации изображений</h3><ul><li>Реализовал REST API на FastAPI для создания задач и отслеживания статусов.</li><li>Использовал PostgreSQL, SQLAlchemy 2.0 и SELECT ... FOR UPDATE SKIP LOCKED для предотвращения конкурентного захвата одной задачи.</li><li>Создал асинхронный воркер для ComfyUI с таймаутами и повторными запросами; настроил Docker Compose, Alembic, GitHub Actions и интеграционные тесты pytest.</li></ul><a href="https://github.com/Bogdan-95/content-factory-console">github.com/Bogdan-95/content-factory-console</a></div>
-<div class="project"><h3>Speed Measurer — CLI-утилита замера скорости загрузки</h3><ul><li>Реализовал измерение средней скорости по 10 запросам, потоковое чтение блоками по 64 КБ и обработку 7 типов ошибок.</li><li>Написал 28 unit-тестов с unittest.mock без реальной сети; добавил Ruff и Black.</li></ul><a href="https://github.com/Bogdan-95/internet-speed-measurer">github.com/Bogdan-95/internet-speed-measurer</a></div>
-<div class="project"><h3>Quote Showcase — FastAPI-сервис каталога цитат</h3><ul><li>Обеспечил потоковую обработку каталогов до 110 МБ, LRU-кэш объёмом 512 КБ с TTL 15 секунд и защиту конкурентных операций через asyncio.Lock.</li></ul><a href="https://github.com/Bogdan-95/quote-showcase">github.com/Bogdan-95/quote-showcase</a></div>
-<div class="project"><h3>Daily Horoscope и City Expert — Telegram-боты</h3><ul><li>Реализовал планировщик ежедневной рассылки, обработку сбоев внешних API и резервное копирование SQLite; интегрировал Google Maps Places API для поиска мест и отелей.</li></ul><a href="https://github.com/Bogdan-95/horoscope-bot">Daily Horoscope</a> · <a href="https://github.com/Bogdan-95/CityExpert_bot">City Expert</a></div></section>
-<section class="section"><h2>Образование</h2><div class="education"><div><strong>Skillbox</strong><div class="small">Курс «Python-разработчик»</div></div><span class="date">2025</span></div><div class="education" style="margin-top:9px"><div><strong>Белгородский государственный аграрный университет имени В.Я. Горина</strong><div class="small">Высшее образование</div></div><span class="date">2023</span></div></section>
-<footer class="footer">Актуальные репозитории и контактная информация: github.com/Bogdan-95 · b95rengo@gmail.com</footer></main></body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b2c">
+  <meta name="description" content="Резюме Богдана Реньго — Python Backend Developer (FastAPI, PostgreSQL, SQLAlchemy 2.0, Docker)">
+  <title>Резюме — Богдан Реньго | Python Backend Developer</title>
+  <style>
+    :root {
+      --ink: #17263a;
+      --muted: #5a6d82;
+      --line: #dbe4eb;
+      --mint: #148b7b;
+      --paper: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #eff3f7;
+      color: var(--ink);
+      font: 14px/1.55 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    .toolbar {
+      max-width: 900px;
+      margin: 22px auto 12px;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .toolbar-right {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .toolbar a, .toolbar button {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      padding: 10px 14px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .toolbar a.download-btn {
+      background: var(--mint);
+      color: #fff;
+      border-color: var(--mint);
+    }
+    .toolbar button {
+      background: #132338;
+      color: #fff;
+      border-color: #132338;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto 28px;
+      padding: 44px 52px;
+      background: #fff;
+      border: 1px solid #e2e8ef;
+      border-radius: 18px;
+      box-shadow: 0 14px 40px #16273a0c;
+    }
+    .header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 18px;
+    }
+    .name {
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: -.04em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .role {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--mint);
+      margin: 6px 0 10px;
+    }
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .contacts a {
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contacts a:hover {
+      color: var(--mint);
+    }
+    .section {
+      margin-top: 22px;
+    }
+    .section h2 {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mint);
+      margin: 0 0 10px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+    }
+    .section p {
+      margin: 0;
+      color: #2c3e50;
+      font-size: 13px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: 135px 1fr;
+      gap: 6px 14px;
+      font-size: 12.5px;
+    }
+    .skills b {
+      color: #17263a;
+    }
+    .jobtop {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-top: 10px;
+    }
+    .jobtop strong {
+      font-size: 14px;
+      color: #0f1e30;
+    }
+    .date {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .project {
+      margin-top: 12px;
+    }
+    .project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .project h3 {
+      font-size: 13px;
+      margin: 0;
+      color: #17263a;
+    }
+    .project a {
+      color: var(--mint);
+      font-size: 11px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .project ul {
+      margin: 4px 0 0;
+      padding-left: 18px;
+      color: #2c3e50;
+      font-size: 12.5px;
+    }
+    .project li {
+      margin: 3px 0;
+    }
+    .prev-job {
+      margin-top: 10px;
+    }
+    .prev-job p {
+      font-size: 12.5px;
+      margin-top: 3px;
+    }
+    .education {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12.5px;
+    }
+    .small {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .footer {
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: #7b8a9b;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    @media (max-width: 650px) {
+      .toolbar { margin-top: 12px; padding: 0 12px; }
+      .page { margin: 0 10px 18px; padding: 24px 18px; border-radius: 14px; }
+      .name { font-size: 26px; }
+      .skills { grid-template-columns: 1fr; gap: 2px; }
+      .skills span { margin-bottom: 6px; }
+    }
+    @page { size: A4; margin: 10mm 12mm; }
+    @media print {
+      body { background: #fff; font-size: 9.5pt; }
+      .toolbar { display: none !important; }
+      .page { max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; }
+      .header { padding-bottom: 10px; }
+      .section { margin-top: 12px; }
+      .project, .prev-job { break-inside: avoid; }
+      .name { font-size: 22pt; }
+      .role { font-size: 11pt; }
+      .footer { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="index.html">← Назад на визитку</a>
+    <div class="toolbar-right">
+      <a class="download-btn" href="Bogdan_Rengo_CV.pdf" download>Скачать готовый PDF ↓</a>
+      <button onclick="window.print()">Печать / Сохранить в PDF ↗</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="header">
+      <h1 class="name">Богдан Реньго</h1>
+      <p class="role">Python Backend Developer (FastAPI / PostgreSQL / SQLAlchemy 2.0 / Docker)</p>
+      <div class="contacts">
+        <span>📍 Белгород / Москва (Удалённо, готов к релокации)</span>
+        <a href="tel:+79155263440">+7 (915) 526-34-40</a>
+        <a href="mailto:b95rengo@gmail.com">b95rengo@gmail.com</a>
+        <a href="https://t.me/bodya_95" target="_blank" rel="noopener">Telegram: @bodya_95</a>
+        <a href="https://github.com/Bogdan-95" target="_blank" rel="noopener">github.com/Bogdan-95</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Профессиональный профиль</h2>
+      <p>
+        <strong>Python Backend Developer.</strong> Специализируюсь на разработке асинхронных веб-сервисов и REST API на <strong>FastAPI</strong>, проектировании реляционных БД (<strong>PostgreSQL, SQLAlchemy 2.0, Alembic</strong>), реализации фоновых воркеров и интеграции внешних API. Реализую конкурентно-безопасные очереди задач в PostgreSQL (<code>SELECT ... FOR UPDATE SKIP LOCKED</code>), потоковую обработку файлов без перегрузки RAM (streaming chunks, LRU/TTL-кэш) и покрываю логику автотестами (<code>pytest</code>, <code>unittest.mock</code>, <code>TestClient</code>).
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Технический стек</h2>
+      <div class="skills">
+        <b>Backend &amp; API</b>
+        <span>Python 3.11–3.12, FastAPI, REST API, Pydantic v2, Dependency Injection, фоновые воркеры, ООП, Type Hints</span>
+        <b>Базы данных</b>
+        <span>PostgreSQL 16, SQLAlchemy 2.0 (ORM &amp; Core), Alembic, SQL, SQLite, Peewee, индексы, транзакции и блокировки</span>
+        <b>Async &amp; HTTP</b>
+        <span>asyncio, httpx (Connection Pooling), aiohttp, aiogram 3, Tenacity (retries / backoff), внешние REST API</span>
+        <b>Тесты и DevOps</b>
+        <span>pytest, FastAPI TestClient, unittest.mock, Docker, Docker Compose, Linux (WSL2), Bash, Git, GitHub Actions (CI), Ruff</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Опыт разработки (Python Backend)</h2>
+      <div class="jobtop">
+        <strong>Python Backend Developer — Freelance / Проектная разработка</strong>
+        <span class="date">Май 2025 — настоящее время</span>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>1. Content Factory — REST API и очередь задач генерации изображений</h3>
+          <a href="https://github.com/Bogdan-95/content-factory-console" target="_blank" rel="noopener">github.com/Bogdan-95/content-factory-console</a>
+        </div>
+        <ul>
+          <li><strong>REST API &amp; Валидация:</strong> Разработал сервис на FastAPI и Pydantic v2 для постановки задач на генерацию изображений (ComfyUI) и отслеживания статусов с проверкой безопасности файловых путей.</li>
+          <li><strong>PostgreSQL Queue (SKIP LOCKED):</strong> Реализовал хранение и атомарный захват задач напрямую в PostgreSQL 16 (SQLAlchemy 2.0) через <code>SELECT ... FOR UPDATE SKIP LOCKED</code>, исключив гонку параллельных воркеров без внешних брокеров.</li>
+          <li><strong>Background Worker &amp; Retries:</strong> Выделил отдельный процесс Worker на <code>httpx</code> и <code>Tenacity</code> с пулом соединений, таймаутами и экспоненциальными повторами при сетевых и HTTP-ошибках.</li>
+          <li><strong>Docker &amp; CI/CD:</strong> Настроил миграции Alembic, контейнеризацию в Docker Compose и пайплайн GitHub Actions (Ruff, сборка образа и интеграционные тесты <code>pytest</code>).</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>2. Quote Showcase — FastAPI-сервис потокового импорта и выдачи каталога</h3>
+          <a href="https://github.com/Bogdan-95/quote-showcase" target="_blank" rel="noopener">github.com/Bogdan-95/quote-showcase</a>
+        </div>
+        <ul>
+          <li><strong>Потоковая обработка (Streaming 110 МБ):</strong> Реализовал построчную потоковую загрузку тяжелых JSON-снимков без полной выгрузки файла в RAM (снижение пикового потребления памяти в 20+ раз) с контролем дубликатов ID.</li>
+          <li><strong>LRU-кэш и конкурентность:</strong> Спроектировал ограниченный по объему (512 КБ) in-memory LRU-кэш с TTL (15 сек), защитил конкурентные запросы через <code>asyncio.Lock</code> и покрыл API автотестами <code>pytest</code>.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>3. Daily Horoscope — Облачный Telegram-сервис с планировщиком рассылок</h3>
+          <a href="https://github.com/Bogdan-95/horoscope-bot" target="_blank" rel="noopener">github.com/Bogdan-95/horoscope-bot</a>
+        </div>
+        <ul>
+          <li><strong>Cloud Deploy &amp; Планировщик:</strong> Разработал асинхронного бота на <code>aiogram 3</code> с планировщиком уведомлений по часовым поясам и развернул в Docker на облачном сервере Beget Cloud (99.9% uptime для активных пользователей).</li>
+          <li><strong>Отказоустойчивость и бэкапы БД:</strong> Интегрировал внешние API с обработкой таймаутов и резервным сценарием (fallback), настроил персистентное хранение подписок в SQLite и автоматический ротационный бэкап БД.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-head">
+          <h3>4. Speed Measurer (CLI &amp; Mocking) и City Expert (Geo API Service)</h3>
+          <span>
+            <a href="https://github.com/Bogdan-95/internet-speed-measurer" target="_blank" rel="noopener">Speed Measurer</a> ·
+            <a href="https://github.com/Bogdan-95/CityExpert_bot" target="_blank" rel="noopener">City Expert</a>
+          </span>
+        </div>
+        <ul>
+          <li><strong>Unit-тестирование с моками:</strong> В CLI-утилите замера скорости HTTP-загрузки (потоковое чтение блоками по 64 КБ, 10 замеров) покрыл логику 28 изолированными unit-тестами (<code>unittest.mock</code>) с симуляцией 7 типов сетевых аварий без обращения к сети.</li>
+          <li><strong>Geo API интеграция:</strong> В сервисе City Expert реализовал поиск отелей и локаций через Google Maps Places API (RapidAPI, SQLite, Peewee) с фильтрацией, избранным и историей запросов.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Предыдущий инженерный и управленческий опыт</h2>
+      <div class="prev-job">
+        <div class="jobtop">
+          <strong>Инженер по планированию производства — Ригель АВ, г. Белгород</strong>
+          <span class="date">Февраль 2022 — настоящее время</span>
+        </div>
+        <p>Расчет ежемесячной потребности в деталях, узлах и номенклатурных позициях для выполнения производственного плана завода (работа в профильном отделе из 3 специалистов); подготовка и систематизация данных производственной номенклатуры.</p>
+      </div>
+      <div class="prev-job">
+        <div class="jobtop">
+          <strong>Менеджер по закупкам и снабжению — ООО РМЗ, г. Белгород</strong>
+          <span class="date">Июнь 2016 — Январь 2022</span>
+        </div>
+        <p>Обеспечение закупок товаров и сырья для производственных нужд, формирование месячных планов закупок и потребности в материалах, работа с номенклатурой и координация поставок.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Образование и языки</h2>
+      <div class="education">
+        <div>
+          <strong>Белгородский государственный аграрный университет имени В.Я. Горина</strong>
+          <div class="small">Высшее (Бакалавриат) · Направление 35.03.06 «Агроинженерия (Технические системы в агробизнесе)»</div>
+        </div>
+        <span class="date">2023</span>
+      </div>
+      <div class="education" style="margin-top:8px">
+        <div>
+          <strong>Повышение квалификации — Курс «Python-разработчик» (Skillbox)</strong>
+          <div class="small">FastAPI, PostgreSQL, SQLAlchemy 2.0, Asyncio, Docker, pytest · Языки: Русский (родной), Английский (A2 — техническое чтение)</div>
+        </div>
+        <span class="date">2025</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Богдан Реньго · Python Backend Developer</span>
+      <span>GitHub: github.com/Bogdan-95 · Telegram: @bodya_95 · b95rengo@gmail.com</span>
+    </footer>
+  </main>
+</body>
+</html>
